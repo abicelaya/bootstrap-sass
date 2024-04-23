@@ -62,3 +62,19 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   border-bottom-left-radius: 40%;
 
 }
+
+.tab-figura{
+  position: absolute;
+  z-index: -10;
+  width: 35vw; 
+  height: 20vw; 
+  top: 30%;
+  left: -4%;
+  background-color: $color-principal; 
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 40%;
+}
+
+h3{
+  color: black;
+}
