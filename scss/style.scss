@@ -7,6 +7,7 @@ $color-principal: #5265E1;
 $color-secundari: #FA5959;
 
 
+$nav-link-color: black;
 
 
 $custom-colors: (
@@ -53,10 +54,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .figura {
   position: absolute;
   z-index: -10;
-  width: 25vw; 
+  width: 35vw; 
   height: 20vw; 
   top: 30%;
-  left: 5%;
+  left: 2%;
   background-color: $color-principal; 
   border-top-left-radius: 40%;
   border-bottom-left-radius: 40%;
@@ -69,7 +70,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   width: 35vw; 
   height: 20vw; 
   top: 30%;
-  left: -4%;
+  right: 50%;
   background-color: $color-principal; 
   border-top-right-radius: 40%;
   border-bottom-right-radius: 40%;
@@ -77,4 +78,33 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 h3{
   color: black;
+}
+p{
+  color: gray;
+}
+
+.card:hover{
+  transform: scale(1.15);
+}
+
+.card-img-top{
+  width: 50%;
+  align-self: center;
+}
+
+.separador {
+  align-self: center;
+  width: 120%;
+  height: 25px; 
+  border-top: dotted rgb(197, 197, 197); 
+  border-spacing: 20px;
+  border-width: 4px ;
+  
+}
+
+.card-text{
+  font-size: 13px;
+}
+.nav-underline .nav-link.active, .nav-underline .show > .nav-link{
+  border-bottom-color: $color-secundari;
 }
