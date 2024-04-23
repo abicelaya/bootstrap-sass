@@ -1,0 +1,64 @@
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+
+$color-principal: #5265E1;
+$color-secundari: #FA5959;
+
+
+
+
+$custom-colors: (
+  "color-secundari": $color-secundari,
+  "color-principal": $color-principal,
+  
+);
+
+
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+.active {
+  color:grey;
+}
+
+.btn-color-secundari {
+  color: white;
+  width: 7rem;
+}
+
+.rectangulo-redondeado{
+  width: 200px; 
+  height: 100px; 
+  background-color: $color-principal; 
+  border-radius: 20px; 
+}
+
+.navbar-toggler {
+  border: none;
+ 
+}
+
+.navbar-toggler.collapsed{
+  border: none;
+}
+
+
+.figura {
+  position: absolute;
+  z-index: -10;
+  width: 25vw; 
+  height: 20vw; 
+  top: 30%;
+  left: 5%;
+  background-color: $color-principal; 
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 40%;
+
+}

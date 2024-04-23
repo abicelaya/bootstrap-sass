@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./scss/style.css " />
+  </head>
+  <body>
+    <!-- Navbar ------------------------------------------------------->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid ms-5 mx-5 my-2">
+        <a class="navbar-brand" href="#"
+          ><img src="./img/logo-bookmark.svg " alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#features"
+                >FEATURES</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#pricing">PRICING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+
+          <button
+            class="btn btn-color-secundari shadow-sm rounded"
+            type="submit"
+          >
+            LOGIN
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Lado izquierdo ------------------------------------------------------->
+    <div class="container my-3">
+      <div class="row align-items-center justify-content-evenly">
+        <div class="col-sm-12 col-md-6 my-3">
+          <h1 class="fw-bold">A Simple Bookmark Manager</h1>
+          <p class="text-justify">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum atque
+            neque asperiores in officiis? Eum quas sed, possimus beatae
+            inventore et sunt officiis fugiat quasi facere? Nulla fuga
+            accusantium voluptas.
+          </p>
+          <button
+            type="button"
+            class="btn btn-color-principal shadow-sm rounded"
+          >
+            Get it on Chrome
+          </button>
+          <button type="button" class="btn btn-light shadow-sm rounded">
+            Get it on Firefox
+          </button>
+        </div>
+
+        <!-- Lado derecho ------------------------------------------------------->
+        <div class="col-sm-12 col-md-6 my-3 text-center position-relative">
+          <img
+            class="img-fluid"
+            src="./img/illustration-hero.svg"
+            alt="illustration-hero"
+          />
+          <div class="position-absolute offset-md-5 figura"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
