@@ -13,7 +13,6 @@ $nav-link-color: black;
 $custom-colors: (
   "color-secundari": $color-secundari,
   "color-principal": $color-principal,
-  
 );
 
 
@@ -24,6 +23,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 
+/*  GENERAL */
+h3{
+  color: black;
+}
+p{
+  color: gray;
+}
 
 .active {
   color:grey;
@@ -34,23 +40,16 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   width: 7rem;
 }
 
+/*
 .rectangulo-redondeado{
   width: 200px; 
   height: 100px; 
   background-color: $color-principal; 
   border-radius: 20px; 
-}
-
-.navbar-toggler {
-  border: none;
- 
-}
-
-.navbar-toggler.collapsed{
-  border: none;
-}
+}*/
 
 
+/* FIGURA AZUL PRIMERA PANTALLA */
 .figura {
   position: absolute;
   z-index: -10;
@@ -64,6 +63,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 }
 
+/* TAB */
 .tab-figura{
   position: absolute;
   z-index: -10;
@@ -76,13 +76,21 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   border-bottom-right-radius: 40%;
 }
 
-h3{
-  color: black;
-}
-p{
-  color: gray;
+.nav-underline .nav-link.active, .nav-underline .show > .nav-link{
+  border-bottom-color: $color-secundari;
 }
 
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler.collapsed{
+  border: none;
+}
+
+
+
+/* CARD */
 .card:hover{
   transform: scale(1.15);
 }
@@ -105,6 +113,74 @@ p{
 .card-text{
   font-size: 13px;
 }
-.nav-underline .nav-link.active, .nav-underline .show > .nav-link{
-  border-bottom-color: $color-secundari;
+
+
+/*  ACORDEON  */
+
+.boton-acordeon{
+  width: 8rem;
+  }
+
+.accordion-item{
+  border: none;
+}
+.accordion-button {
+  border-bottom: 1px solid rgb(211, 210, 210);
+}
+.accordion-button:not(.collapsed){
+  background-color: white;
+  box-shadow: none;
+}
+.accordion-button:focus{
+  box-shadow: none;
+}
+
+/*  FOOTER */
+footer{
+  background-color: $color-principal;
+}
+
+.text-footer{
+  color: white !important;
+  letter-spacing: 4px;
+}
+
+.title-footer{
+  color: white !important;
+}
+
+.input-group{
+  width: 30rem;
+}
+
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 5px; 
+  border-bottom-right-radius: 5px;
+}
+
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback){
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nav-footer{
+  background-color: rgb(49, 49, 109);
+}
+
+.text-nav{
+  color: white;
+  font-size: 14px;
+}
+
+.iconos{
+  margin-left: 60rem;
+}
+
+.navbar-footer{
+  padding: 0 ;
+  
+}
+
+.form-control{
+  width: 16rem;
 }

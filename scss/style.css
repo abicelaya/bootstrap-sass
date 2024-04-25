@@ -12153,6 +12153,15 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*  GENERAL */
+h3, .h3 {
+  color: black;
+}
+
+p {
+  color: gray;
+}
+
 .active {
   color: grey;
 }
@@ -12162,21 +12171,14 @@ textarea.form-control-lg {
   width: 7rem;
 }
 
-.rectangulo-redondeado {
-  width: 200px;
-  height: 100px;
-  background-color: #5265E1;
-  border-radius: 20px;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler.collapsed {
-  border: none;
-}
-
+/*
+.rectangulo-redondeado{
+  width: 200px; 
+  height: 100px; 
+  background-color: $color-principal; 
+  border-radius: 20px; 
+}*/
+/* FIGURA AZUL PRIMERA PANTALLA */
 .figura {
   position: absolute;
   z-index: -10;
@@ -12189,6 +12191,7 @@ textarea.form-control-lg {
   border-bottom-left-radius: 40%;
 }
 
+/* TAB */
 .tab-figura {
   position: absolute;
   z-index: -10;
@@ -12201,14 +12204,19 @@ textarea.form-control-lg {
   border-bottom-right-radius: 40%;
 }
 
-h3, .h3 {
-  color: black;
+.nav-underline .nav-link.active, .nav-underline .show > .nav-link {
+  border-bottom-color: #FA5959;
 }
 
-p {
-  color: gray;
+.navbar-toggler {
+  border: none;
 }
 
+.navbar-toggler.collapsed {
+  border: none;
+}
+
+/* CARD */
 .card:hover {
   transform: scale(1.15);
 }
@@ -12231,6 +12239,73 @@ p {
   font-size: 13px;
 }
 
-.nav-underline .nav-link.active, .nav-underline .show > .nav-link {
-  border-bottom-color: #FA5959;
+/*  ACORDEON  */
+.boton-acordeon {
+  width: 8rem;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button {
+  border-bottom: 1px solid rgb(211, 210, 210);
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/*  FOOTER */
+footer {
+  background-color: #5265E1;
+}
+
+.text-footer {
+  color: white !important;
+  letter-spacing: 4px;
+}
+
+.title-footer {
+  color: white !important;
+}
+
+.input-group {
+  width: 30rem;
+}
+
+.input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-group > :not(:first-child):not(.dropdown-menu):not(.valid-tooltip):not(.valid-feedback):not(.invalid-tooltip):not(.invalid-feedback) {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.nav-footer {
+  background-color: rgb(49, 49, 109);
+}
+
+.text-nav {
+  color: white;
+  font-size: 14px;
+}
+
+.iconos {
+  margin-left: 60rem;
+}
+
+.navbar-footer {
+  padding: 0;
+}
+
+.form-control {
+  width: 16rem;
 }/*# sourceMappingURL=style.css.map */
