@@ -12166,9 +12166,12 @@ p {
   color: grey;
 }
 
+.btn-login {
+  width: 7rem;
+}
+
 .btn-color-secundari {
   color: white;
-  width: 7rem;
 }
 
 /*
@@ -12273,10 +12276,6 @@ footer {
 
 .title-footer {
   color: white !important;
-}
-
-.input-group {
-  width: 30rem;
 }
 
 .input-group:not(.has-validation) > :not(:last-child):not(.dropdown-toggle):not(.dropdown-menu):not(.form-floating) {
